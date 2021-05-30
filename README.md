@@ -13,7 +13,7 @@ This tool is designed to notify you when a specific process is finished. The lib
 3. From your terminal run `node cli.js`.
 
 #### CLI demo
-![CLI demo](./demo/cli-demo.gif)
+![CLI demo](https://raw.githubusercontent.com/NeliHarbuzava/process-end-notify/master/demo/cli-demo.gif?token=AHNLBWES5RVJPDZHBCQD5GTAWOYCQ)
 
 ### API
 1. Install the lib by running `npm install process-end-notify`.
