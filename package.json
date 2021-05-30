@@ -1,0 +1,27 @@
+{
+  "name": "process-end-notify",
+  "version": "1.0.0",
+  "description": "This tool is designed to notify you when a specific process is finished.",
+  "keywords": [
+    "cli",
+    "process",
+    "node"
+  ],
+  "homepage": "https://github.com/NeliHarbuzava/process-end-notify#readme",
+  "bugs": {
+    "url": "https://github.com/NeliHarbuzava/process-end-notify/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NeliHarbuzava/process-end-notify.git"
+  },
+  "license": "MIT",
+  "main": "cli.js",
+  "scripts": {
+  },
+  "author": "Neli Harbuzava",
+  "dependencies": {
+    "ps-node": "0.1.6",
+    "terminal-kit": "2.1.4"
+  }
+}
