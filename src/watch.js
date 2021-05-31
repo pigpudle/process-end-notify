@@ -18,7 +18,7 @@ async function watch(callback = () => {}) {
 
         const menuItems = [
             '0. Exit program',
-            ...foundProcesses.map((process, index) => `${index + 1}. ${process.command}`)
+            ...foundProcesses.map((process, index) => `${index + 1}. ${process.command}: ${process.arguments}`)
         ];
 
         const selectedProcessIndex = await IO.menu('Select a process:', menuItems);
