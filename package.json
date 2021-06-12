@@ -1,6 +1,6 @@
 {
   "name": "process-end-notify",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "This tool is designed to notify you when a specific process is finished.",
   "keywords": [
     "cli",

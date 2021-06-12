@@ -4,7 +4,7 @@ This tool is designed to notify you when a specific process is finished. The lib
 
 ## Usage
 ### CLI
-1. Copy this repository.
+1. Clone this repository to your computer.
 2. Open a terminal window inside a folder with the downloaded lib.
 3. Run `npm i`.
 4. From your terminal run `npm run cli`.
