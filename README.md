@@ -4,8 +4,8 @@ This tool is designed to notify you when a specific process is finished. The lib
 
 ## Usage
 ### CLI
-1. Install the lib by running `npm install process-end-notify`.
-2. Open a terminal window inside a folder with the installed lib.
+1. Copy this repository.
+2. Open a terminal window inside a folder with the downloaded lib.
 3. Run `npm i`.
 4. From your terminal run `npm run cli`.
 
