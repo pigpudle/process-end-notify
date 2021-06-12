@@ -1,5 +1,5 @@
-const watch = require('./src/watch');
+const Watcher = require('./src/Watcher');
 
 (async function() {
-    await watch();
+    await new Watcher().start();
 })();

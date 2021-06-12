@@ -1,36 +1,34 @@
 const readline = require('readline');
 const terminal = require('terminal-kit').terminal;
+const EventEmitter = require('events');
 
-class IO {
+const io = new EventEmitter();
 
-    static send(message) {
-        console.log(message);
-    }
+io.on('info', (message) => {
+    console.log(message);
+});
 
-    static get(message) {
-        return new Promise((resolve) => {
-            const rl = readline.createInterface({
-                input: process.stdin,
-                output: process.stdout
-            });
+io.on('get', (message, callback, metadata) => {
+    const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    });
 
-            rl.question(message, (result) => {
-                resolve(result);
-                setTimeout(() => rl.close());
-            });
-        });
-    }
-    
-    static menu(message, items) {
-        return new Promise((resolve, reject) => {
-            console.log(message);
-            terminal.singleColumnMenu(items, (err, response) => {
-                if (err) return reject(err);
-                resolve(response.selectedIndex);
-            });
-        });
-    }
+    rl.question(message, (result) => {
+        callback(null, result, metadata);
+        setTimeout(() => rl.close());
+    });
+});
 
-}
+io.on('menu', (message, items, callback, metadata) => {
+    console.log(message);
+    terminal.singleColumnMenu(items, (err, response) => {
+        callback(err, response.selectedIndex, metadata);
+    });
+});
 
-module.exports = IO;
+io.on('error', (err) => {
+    console.error(err);
+});
+
+module.exports = io;

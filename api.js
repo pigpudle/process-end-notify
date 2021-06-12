@@ -1,11 +1,5 @@
-const watch = require('./src/watch');
+const Watcher = require('./src/Watcher');
 
-class API {
-
-    static async watchUntilFinishes(callback) {
-        await watch(callback);
-    }
-
-}
-
-module.exports = API;
+module.exports = {
+    Watcher
+};
