@@ -10,7 +10,7 @@ This tool is designed to notify you when a specific process is finished. The lib
 4. From your terminal run `npm run cli`.
 
 #### CLI demo
-![CLI demo](https://raw.githubusercontent.com/NeliHarbuzava/process-end-notify/master/demo/cli-demo.gif?token=AHNLBWES5RVJPDZHBCQD5GTAWOYCQ)
+![CLI demo](https://raw.githubusercontent.com/NeliHarbuzava/process-end-notify/master/demo/cli-demo.gif)
 
 ### API
 1. Install the lib by running `npm install process-end-notify`.
