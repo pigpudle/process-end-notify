@@ -7,14 +7,6 @@
     "process",
     "node"
   ],
-  "homepage": "https://github.com/NeliHarbuzava/process-end-notify#readme",
-  "bugs": {
-    "url": "https://github.com/NeliHarbuzava/process-end-notify/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/NeliHarbuzava/process-end-notify.git"
-  },
   "license": "MIT",
   "main": "api.js",
   "scripts": {
